@@ -1,0 +1,51 @@
+// /* initials  */
+@import './sass/reset';
+
+// /* *** Roots *** */
+
+@import './sass/root';
+
+@import './sass/main_header';
+
+@import './sass/main_slider';
+
+@import './sass/countdown_timer';
+
+
+
+
+.main-section{
+    background-color: var(--bg-color);
+    display: grid;
+    justify-content: center;
+
+    .white-section-container{        
+        background-color: var(--light-color);
+        width: 1500px;
+        margin: 25px 0;
+        padding: 40px;
+        border-radius: 15px;
+        // height: 200px;
+
+        header{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            .title{
+                font-size: 28px;
+                font-weight: 900;
+                background: linear-gradient(to right ,var(--main-color),var(--primary-color));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+.next-match{
+    header{
+        display: flex !important;
+        justify-content: center;
+        
+        gap: 55px;
+    }
+}

@@ -1,0 +1,90 @@
+@import './new';
+
+.timer__countdown.normal{
+    display: flex;
+    font-size: 32px;
+    .item{
+        display: grid;
+        grid-template-columns: minmax(1.4em, auto) auto;
+        grid-template-rows: minmax(1.25em, 0.2em) minmax(0.4em, 0.2em);
+
+        &:last-child{
+            grid-template-columns: 1.4em;  
+        }
+        
+            .value{
+                font-weight: 900;
+                font-size: 1em;
+                text-align: center;
+            }
+            .seprator{
+                margin: 0 5px;
+                font-weight: 300;
+                font-size: 1em;
+            }
+            .label{
+                font-size: .3em;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                color: var(--gray-color);
+            }
+    }
+
+    .zero{
+        .value,.label{
+            font-weight: 300;
+        }
+    }
+}
+
+.timer__countdown.gradient{
+    .day{
+        .value{
+            background: linear-gradient(to right ,var(--gradient-step-1),var(--gradient-step-3));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .hour{
+        .value{
+            background: linear-gradient(to right ,var(--gradient-step-3),var(--gradient-step-5));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .min{
+        .value{
+            background: linear-gradient(to right ,var(--gradient-step-5),var(--gradient-step-7));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .sec{
+        .value{
+            background: linear-gradient(to right ,var(--gradient-step-7),var(--gradient-step-9));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    
+    
+}
+
+.timer__countdown{
+    &.main-color{
+        .value{
+            color: var(--main-color);
+        }
+    }
+
+    &.primary-color{
+        .value{
+            color: var(--primary-color);
+        }
+    }
+}

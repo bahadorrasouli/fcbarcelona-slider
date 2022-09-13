@@ -1,0 +1,194 @@
+
+
+:root{
+    
+}
+
+/* *** Main Styles *** */
+
+header, header a{
+    color: var(--light-color);
+}
+
+
+
+
+header .main-logo::after, header .main-logo::before{
+    
+}
+
+header .main-logo::after{
+    top: 0;
+    right: 0;
+    background-color: var(--main-color);
+}
+
+header .main-logo::before{
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+}
+
+header .main-logo{
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+header .main-logo:hover{
+    background-color: var(--very-light-main);
+}
+
+header .main-logo:hover::after, header .main-logo:hover::before{
+   height: 40px;
+}
+
+
+
+
+
+
+/* *** Option Pannel *** */
+
+header .option-pannel .social-pannel{
+    display: flex;
+    margin-right: 10px;
+    
+}
+
+header .option-pannel .social-pannel .title{
+    color: var(--light-main);
+
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+header .option-pannel .social-pannel>:first-child{
+    margin-right: 20px ;
+}
+
+header .option-pannel .social-pannel ul{
+    display: flex;
+    
+}
+
+header .option-pannel .social-pannel a{
+    color: var(--light-main);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+header .option-pannel .social-pannel a:hover{
+    color: var(--light-color);
+   
+}
+
+header .option-pannel .social-pannel ul>*{
+    margin-right: 10px;
+}
+
+header .option-pannel .social-pannel ul>*:last-child{
+    margin-right: 0;
+}
+
+header .option-pannel .social-pannel ul i{
+    font-size: 20px;
+}
+
+header .option-pannel .register-pannel{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+header .option-pannel .register-pannel>*{
+    display: flex;
+    margin-right: 15px;
+}
+
+header .option-pannel .register-pannel>*:last-child{
+    margin-right:0;
+}
+
+header .option-pannel .register-pannel>* a>*:first-child{
+    margin-right: 3px;
+}
+
+header .option-pannel .register-pannel .register a{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, var(--main-color-dark), var(--main-color));
+    padding: 7px;
+    border-radius: 5px;
+}
+
+header .option-pannel .register-pannel .register a svg{
+    width: 20px;
+    fill: var(--light-color);
+}
+
+header .option-pannel .register-pannel .login a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* *** Nav Pannel *** */
+header .nav-pannel{
+    border-top: 1px solid var(--very-light-main);
+}
+
+header .nav-pannel nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+header .nav-pannel nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px 0;
+    border-right: 1px solid var(--very-light-main);
+
+
+    transition: color .3s;
+}
+
+header .nav-pannel nav a span{
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;    
+}
+
+header .nav-pannel nav a i{
+    font-size: 7px;
+}
+
+header .nav-pannel nav a:hover{
+    color: var(--third-color);
+}
+
+header .nav-pannel .search-pannel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav-pannel .search-pannel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color .3s;
+    cursor: pointer;
+}
+
+header .nav-pannel .search-pannel:hover{
+    color: var(--third-color);
+}

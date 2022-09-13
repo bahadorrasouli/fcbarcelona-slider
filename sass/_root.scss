@@ -1,0 +1,50 @@
+$mainColor : #cd122d;
+$mainColorDark : #5e0815;
+$primaryColor : #154284;
+$primaryColorDark : #0c254b;
+$thirdColor : #fdc52c;
+$lightColor: #fff;
+$darkColor: #222;
+$grayColor: #777777;
+
+$bgColor : #181733;
+$bgSelectedColor : #0a0927;
+$lightMain : rgba(255, 255, 255,0.5);
+$veryLightMain : rgba(255, 255, 255,0.1);
+
+$gradientStep1 : #cd122d;
+$gradientStep2 : #c21532;
+$gradientStep3 : #ae1a3c;
+$gradientStep4 : #942148;
+$gradientStep5 : #782855;
+$gradientStep6 : #5c3063;
+$gradientStep7 : #41376f;
+$gradientStep8 : #41376f;
+$gradientStep9 : #154284;
+
+
+:root{ 
+    --main-color : #{$mainColor};
+    --main-color-dark : #{$mainColorDark};
+    --primary-color : #{$primaryColor};
+    --primary-color-dark : #{$primaryColorDark};
+    --third-color : #{$thirdColor};
+    --light-color: #{$lightColor};
+    --dark-color: #{$darkColor};
+    --gray-color: #{$grayColor};
+
+    --bg-color : #{$bgColor};
+    --bg-selected-color : #{$bgSelectedColor};
+    --light-main : #{$lightMain};
+    --very-light-main : #{$veryLightMain};
+
+    --gradient-step-1 : #{$gradientStep1};
+    --gradient-step-2 : #{$gradientStep2};
+    --gradient-step-3 : #{$gradientStep3};
+    --gradient-step-4 : #{$gradientStep4};
+    --gradient-step-5 : #{$gradientStep5};
+    --gradient-step-6 : #{$gradientStep6};
+    --gradient-step-7 : #{$gradientStep7};
+    --gradient-step-8 : #{$gradientStep8};
+    --gradient-step-9 : #{$gradientStep9};
+}
